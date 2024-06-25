@@ -9,7 +9,7 @@ st.title("Predictive Maintanance")
 def load_data(url):
     data=pd.read_csv(url)
     return data
-url="/home/alpha/Downloads/ai4i2020.csv"
+url="ai4i2020.csv"
 data=load_data(url)
 
 data.drop(["UDI","Product ID"],inplace=True,axis=1)
